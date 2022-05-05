@@ -1,5 +1,4 @@
-FROM python:3.7-alpine
-MAINTAINER RR2112
+FROM python:3.10.4-alpine3.15
 
 ENV PYTHONUNBUFFERED 1
 
@@ -10,6 +9,7 @@ RUN pip install -r /requirements.txt
 RUN mkdir /app
 WORKDIR /app
 COPY ./app /app
+
 
 RUN adduser -D user
 USER user

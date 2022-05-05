@@ -1,2 +1,3 @@
-# Recipe_app
-Recipe app source code
+docker build -f Dockerfile -t restapiadvanced .
+
+docker-compose build
